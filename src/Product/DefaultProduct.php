@@ -13,7 +13,7 @@ class DefaultProduct
     public function __construct(Item $item)
     {
         $this->item = $item;
-        $this->actions = new ProductActions();
+        $this->actions = new ProductAction();
     }
     
     public function process(): void

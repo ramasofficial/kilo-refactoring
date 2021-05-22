@@ -48,7 +48,7 @@ final class GildedRose
                     $product = new ConjuredManaCake($item);
                     break;
                 default:
-                    throw new Exception('Unknown product name: ' . $item->name);
+                    throw new Exception('Unknown product name: {' . $item->name . '}');
             }
 
             $product->process();

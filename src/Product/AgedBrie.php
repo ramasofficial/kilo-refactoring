@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace GildedRose\Product;
 
-use GildedRose\Item;
-
 class AgedBrie extends DefaultProduct
 {
     public const PRODUCT_NAME = 'Aged Brie';
