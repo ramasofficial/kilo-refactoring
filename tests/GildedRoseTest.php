@@ -4,19 +4,20 @@ declare(strict_types=1);
 
 namespace Tests;
 
-use GildedRose\GildedRose;
 use GildedRose\Item;
+use GildedRose\GildedRose;
 use PHPUnit\Framework\TestCase;
+use GildedRose\Exception\UnknownProductException;
 
 class GildedRoseTest extends TestCase
 {
-    // public function testFoo(): void
-    // {
-    //     $items = [new Item('foo', 0, 0)];
-    //     $gildedRose = new GildedRose2($items);
-    //     $gildedRose->updateQuality();
-    //     $this->assertSame('fixme', $items[0]->name);
-    // }
+    public function testFoo(): void
+    {
+        $this->expectException(UnknownProductException::class);
+        $items = [new Item('foo', 0, 0)];
+        $gildedRose = new GildedRose($items);
+        $gildedRose->updateQuality();
+    }
 
     public function testDayOneAndLastIsSame(): void
     {
