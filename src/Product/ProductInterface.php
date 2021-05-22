@@ -6,6 +6,9 @@ namespace GildedRose\Product;
 
 use GildedRose\Item;
 
+/**
+ * ProductInterface interface
+ */
 interface ProductInterface
 {    
     /**

@@ -6,6 +6,9 @@ namespace GildedRose\Exception;
 
 use Exception;
 
+/**
+ * UnknownProductException class
+ */
 class UnknownProductException extends Exception
 {
     

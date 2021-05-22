@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 namespace GildedRose\Product;
 
+/**
+ * BackstagePasses product class
+ */
 class BackstagePasses extends DefaultProduct
 {
     public const PRODUCT_NAME = 'Backstage passes to a TAFKAL80ETC concert';

@@ -12,6 +12,9 @@ use GildedRose\Product\SulfurasHandRagnaros;
 use GildedRose\Product\BackstagePasses;
 use GildedRose\Product\ConjuredManaCake;
 
+/**
+ * GildedRose class
+ */
 final class GildedRose
 {
     /**
