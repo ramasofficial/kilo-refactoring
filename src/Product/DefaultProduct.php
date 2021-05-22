@@ -6,7 +6,7 @@ namespace GildedRose\Product;
 
 use GildedRose\Item;
 
-class DefaultProduct
+class DefaultProduct implements ProductInterface
 {
     protected $item;
 
