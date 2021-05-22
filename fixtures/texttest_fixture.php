@@ -6,7 +6,6 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 use GildedRose\Item;
 use GildedRose\GildedRose;
-use GildedRose\GildedRose2;
 
 echo 'OMGHAI!' . PHP_EOL;
 
@@ -23,14 +22,14 @@ $items = [
     new Item('Conjured Mana Cake', 3, 6),
 ];
 
-$app = new GildedRose2($items);
+$app = new GildedRose($items);
 
-$days = 31;
+$days = 30;
 if (count($argv) > 1) {
     $days = (int) $argv[1];
 }
 
-for ($i = 0; $i < $days; $i++) {
+for ($i = 0; $i <= $days; $i++) {
     echo "-------- day ${i} --------" . PHP_EOL;
     echo 'name, sellIn, quality' . PHP_EOL;
     foreach ($items as $item) {
