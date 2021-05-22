@@ -6,3 +6,13 @@ Clone this repository:
 ```
 git clone https://github.com/ramasofficial/kilo-refactoring.git
 ```
+
+Install composer:
+```
+composer install
+```
+
+Run tests:
+```
+composer test
+```
