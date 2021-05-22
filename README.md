@@ -16,3 +16,8 @@ Run tests:
 ```
 composer test
 ```
+
+Check code:
+```
+composer check-cs
+```
