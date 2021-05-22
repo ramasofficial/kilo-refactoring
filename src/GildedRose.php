@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace GildedRose;
 
-use Exception;
+use GildedRose\Exception\UnknownProductException;
 use GildedRose\Product\DexterityVest;
 use GildedRose\Product\AgedBrie;
 use GildedRose\Product\ElixirMongoose;
@@ -48,7 +48,7 @@ final class GildedRose
                     $product = new ConjuredManaCake($item);
                     break;
                 default:
-                    throw new Exception('Unknown product name: {' . $item->name . '}');
+                    throw new UnknownProductException('Unknown product name: {' . $item->name . '}');
             }
 
             $product->process();

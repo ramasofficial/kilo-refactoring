@@ -7,7 +7,8 @@
     "autoload": {
         "psr-4": {
             "GildedRose\\": "src/",
-            "GildedRose\\Product\\": "src/Product/"
+            "GildedRose\\Product\\": "src/Product/",
+            "GildedRose\\Exception\\": "src/Exception/"
         }
     },
     "autoload-dev": {
