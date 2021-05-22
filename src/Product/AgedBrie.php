@@ -11,12 +11,14 @@ class AgedBrie extends DefaultProduct
 
     public function process(): void
     {
-        if($this->item->sell_in > 0) {
-            $this->item->quality = $this->actions->increaseQuality($this->item->quality, self::MAX_QUALITY, 1);
-        } else {
-            $this->item->quality = $this->actions->increaseQuality($this->item->quality, self::MAX_QUALITY, 2);
-        }
+        $sellIn = $this->item->sell_in;
+        $this->decreaseSellIn();
 
-        $this->item->sell_in = $this->actions->decreaseSellIn($this->item->sell_in, 1);
+        if($sellIn > 0) {
+            $this->item->quality = $this->actions->increaseQuality($this->item->quality, self::MAX_QUALITY, 1);
+            return;
+        }
+        
+        $this->item->quality = $this->actions->increaseQuality($this->item->quality, self::MAX_QUALITY, 2);
     }
 }

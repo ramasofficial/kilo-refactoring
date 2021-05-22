@@ -11,12 +11,14 @@ class ConjuredManaCake extends DefaultProduct
 
     public function process(): void
     {
-        if($this->item->sell_in > 0) {
+        $sellIn = $this->item->sell_in;
+        $this->decreaseSellIn();
+
+        if($sellIn > 0) {
             $this->item->quality = $this->actions->decreaseQuality($this->item->quality, 2);
-        } else {
-            $this->item->quality = $this->actions->decreaseQuality($this->item->quality, 4);
+            return;
         }
 
-        $this->item->sell_in = $this->actions->decreaseSellIn($this->item->sell_in, 1);
+        $this->item->quality = $this->actions->decreaseQuality($this->item->quality, 4);
     }
 }

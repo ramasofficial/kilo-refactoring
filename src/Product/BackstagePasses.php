@@ -11,12 +11,14 @@ class BackstagePasses extends DefaultProduct
 
     public function process(): void
     {
-        if($this->item->sell_in > 0) {
+        $sellIn = $this->item->sell_in;
+        $this->decreaseSellIn();
+
+        if($sellIn > 0) {
             $this->item->quality = $this->actions->increaseQuality($this->item->quality, self::MAX_QUALITY, 2);
-        } else {
-            $this->item->quality = 0;
+            return;
         }
 
-        $this->item->sell_in = $this->actions->decreaseSellIn($this->item->sell_in, 1);
+        $this->item->quality = 0;
     }
 }

@@ -11,9 +11,11 @@ use GildedRose\Exception\UnknownProductException;
 
 class GildedRoseTest extends TestCase
 {
-    public function testFoo(): void
+    public function testUnknownProductException(): void
     {
+        $this->expectExceptionMessage('Unknown product name');
         $this->expectException(UnknownProductException::class);
+
         $items = [new Item('foo', 0, 0)];
         $gildedRose = new GildedRose($items);
         $gildedRose->updateQuality();

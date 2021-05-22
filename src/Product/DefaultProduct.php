@@ -18,12 +18,19 @@ class DefaultProduct implements ProductInterface
     
     public function process(): void
     {
-        if($this->item->sell_in > 0) {
+        $sellIn = $this->item->sell_in;
+        $this->decreaseSellIn();
+
+        if($sellIn > 0) {
             $this->item->quality = $this->actions->decreaseQuality($this->item->quality, 1);
-        } else {
-            $this->item->quality = $this->actions->decreaseQuality($this->item->quality, 2);
+            return;
         }
 
+        $this->item->quality = $this->actions->decreaseQuality($this->item->quality, 2);
+    }
+
+    public function decreaseSellIn(): void
+    {
         $this->item->sell_in = $this->actions->decreaseSellIn($this->item->sell_in, 1);
     }
 }
