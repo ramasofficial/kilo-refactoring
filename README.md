@@ -1,6 +1,8 @@
 # Introduction
 I provide my solution to Gilded Rose Refactoring Kata.
 
+Author: Ramas, 2021
+
 # Installation
 Clone this repository:
 ```
