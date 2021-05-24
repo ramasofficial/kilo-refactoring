@@ -1,6 +1,9 @@
 # Introduction
 I provide my solution to Gilded Rose Refactoring Kata.
 
+Check full documentation for task:
+[GildedRose Refactoring Kata](https://github.com/emilybache/GildedRose-Refactoring-Kata)
+
 Author: Ramas, 2021
 
 # Installation
