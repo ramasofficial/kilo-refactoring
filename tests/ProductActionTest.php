@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Tests;
 
 use PHPUnit\Framework\TestCase;
-use GildedRose\Product\ProductAction;
+use GildedRose\Product\Action\ProductAction;
 
 class ProductActionTest extends TestCase
 {

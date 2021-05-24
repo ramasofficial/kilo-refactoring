@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace GildedRose\Product;
 
 use GildedRose\Item;
+use GildedRose\Product\Action\ProductAction;
 
 /**
  * DefaultProduct product class

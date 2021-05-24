@@ -21,6 +21,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         __DIR__ . '/tests',
     ]);
 
+    // ToDo: Need to check this function because SETS is deprecated now
     $parameters->set
     (Option::SETS,
         [

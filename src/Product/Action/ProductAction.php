@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace GildedRose\Product;
+namespace GildedRose\Product\Action;
 
 /**
  * ProductAction class
