@@ -4,6 +4,13 @@ I provide my solution to Gilded Rose Refactoring Kata.
 Check full documentation for task:
 [GildedRose Refactoring Kata](https://github.com/emilybache/GildedRose-Refactoring-Kata)
 
+* I choosed to split all products to different classes and put specific product logic into specific product class.
+* I minimized the code and made it easy to read.
+* Child classes inherit parent class logic.
+* I made actions class where i put actions logic.
+
+I would like to make Item class with setters & getters, but in documentation wrote, that i can't do it and i left it how it is.
+
 Author: Ramas, 2021
 
 # Installation
