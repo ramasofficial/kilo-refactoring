@@ -7,22 +7,22 @@ Check full documentation for task:
 Author: Ramas, 2021
 
 # Installation
-Clone this repository:
+1. Clone this repository:
 ```
 git clone https://github.com/ramasofficial/kilo-refactoring.git
 ```
 
-Install composer:
+2. Install composer:
 ```
 composer install
 ```
 
-Run tests:
+3. Run tests:
 ```
 composer test
 ```
 
-Check code:
+4. Check code:
 ```
 composer check-cs
 ```
